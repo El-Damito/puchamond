@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>PUCHAMOOOON</title>
+        <link rel="stylesheet" href="./estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="seccionunadepuchamones">
+            
+            <h1 class = "titulo">PUCHAMOOON</h1>
+
+            <h2 class="subtituloss">Elige a tu PUCHAMOOOOON:</h2>
+            
+            <div id = 'targetaspuchamon'  class="targetasp"></div>
+
+            <button id="botonSeleccion">Seleccionar</button>
+        </section>
+
+        <section id="vermapa">
+            <h2 class = "subtituloss">Recorre el mapa con el puchamon</h2>
+            <canvas id="mapa"></canvas>
+            <button 
+                onmouseup="detenermovimiento()"            
+                onmousedown ='moverArriba()'
+                ontouchend="detenermovimiento()"            
+                ontouchstart ='moverArriba()'
+            >Arriba</button>
+            <div>
+                <button 
+                    onmouseup="detenermovimiento()"
+                    ontouchend="detenermovimiento()"
+                    onmousedown ='moverIzquierda()'
+                    ontouchstart ='moverIzquierda()'
+                >Izquierda</button>
+                <button 
+                    onmouseup="detenermovimiento()"
+                    ontouchend="detenermovimiento()" 
+                    onmousedown ='moverAbajo()'
+                    ontouchstart ='moverAbajo()'>Abajo</button>
+                <button 
+                    onmouseup="detenermovimiento()"
+                    ontouchend="detenermovimiento()" 
+                    onmousedown ='moverDerecha()'
+                    ontouchstart ='moverDerecha()'
+                >Derecha</button>
+            </div>
+        </section>
+
+        <section  id="deataques">
+            <h1 class = "titulocombate"> Hora del combate¡¡¡</h1>
+            <h2>Elije tu ataque</h2>
+
+            <div id = 'contenedorataques' class="paralosbotones">
+
+            </div>
+
+            <div id='Mensajes'>
+                <p id="resultados">Comienza el Combate¡¡¡</p>
+
+                <section id="Reiniciar">
+                    <button id = 'botonreiniciar'>Reiniciar</button>
+                </section>
+            </div>
+            <div class="ataquespadre">
+                <div class="ataquepuchamon">
+                    <span id = 'vidas-jugador'>0</span>
+                    <p id="puchamon-jugador"></p>
+                    <div id="ataquejugador-m"></div>
+                    <p>Tu Puchamooon</p>
+                </div>
+                <div class="ataquepuchamonnt">
+                    <span id = 'vidas-enemigo'>0</span>
+                    <p id="puchamon-enemigo"></p>
+                    <div id="ataqueenemigo-m"></div>
+                    <p>El puchamon de tu enemigo </p>
+                </div>
+                
+            </div>        
+        </section>
+        <script src="./puchamonscrip.js"></script>
+    </body>
+</html>

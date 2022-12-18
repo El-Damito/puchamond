@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Press+Start+2P&display=swap');
+
+body {
+    width: auto;
+    height: auto;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("./dolordecabeza/19871696.jpg");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#seccionunadepuchamones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color:#FD841F;
+    font-size: large + 10px;
+
+}
+.titulocombate {
+    color:#FD841F;
+    font-size: 25px;
+
+}
+.subtituloss{
+    color: #E14D2A;
+    font-size: large;
+}
+.targetasp, .paralosbotones {
+    display: flex;
+    gap: 10px;
+}
+#deataques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.targetadepuchamon {
+    width: 250px;
+    height: 150px;
+    background: #FD841F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.targetadepuchamon img{
+    width: 100px;
+}
+#botonSeleccion {
+    width: 88px;
+    height: 25px;
+    border-radius: 25px;
+    background: #001253;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    margin: 30px 0px 0px 0px;
+
+}
+#botonSeleccion:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width: 95px;
+    height: 35px;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    height: 160px;
+    width: 260px;
+    
+    background-color: rgb(232, 235, 49);
+}
+#deataques{
+
+    flex-direction: column;
+    align-items: center;
+}
+.ataqueboton {
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  background-color:#FD841F;
+  box-sizing: border-box;
+  font-size: 10px;
+  border-radius: 20px;
+  color: #000000;
+  padding: 15px;
+  width: 175px;
+  text-align: center;
+  transition-duration: 0.4s;
+  
+  overflow: hidden;
+  cursor: pointer;
+}
+.ataqueboton:after {
+  content: "";
+  background: #000000;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.ataqueboton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+#Mensajes{
+    width: 355px;
+    background: white;
+    height: 25px;
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 40px;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#botonreiniciar {
+    border: blue;
+    color: #001253;
+    font-family: 'Nerko One', cursive;
+    border-radius: 20px;
+    height: 28px;
+    width: auto;
+}
+#botonreiniciar:hover{
+    background-color: antiquewhite;
+    width: 90px;
+    border: 2px solid black;
+
+}
+.ataquespadre{
+    display: grid;
+    grid-template-columns: 175px 175px
+}
+.ataquepuchamon, .ataquepuchamonnt{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ataquepuchamon {
+    background: white;
+    height: auto;
+    width: auto;
+    margin-inline: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ataquepuchamonnt {
+    background: white;
+    height: auto;
+    width: auto;
+    margin-inline: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#vermapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#vermapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    background: #001253;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    margin-top: 10px;
+}
+
+@media (max-width:560px){
+    .targetasp, .paralosbotones {
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width:300px){
+    #vermapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
